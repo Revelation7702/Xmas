@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Xmas Store</title>
+  <style>
+    /* Reset and Basic Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      background: #e0e5ec;
+      color: #333;
+    }
+
+    /* Neumorphic Header */
+    header {
+      background: #e0e5ec;
+      box-shadow: 10px 10px 20px #babecc, -10px -10px 20px #ffffff;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-radius: 10px;
+      margin: 20px;
+    }
+
+    header h1 {
+      font-size: 2rem;
+      color: #ff4b5c;
+    }
+
+    header nav a {
+      text-decoration: none;
+      color: #47a025;
+      font-size: 1rem;
+      font-weight: bold;
+      margin-left: 20px;
+      transition: color 0.3s ease-in-out;
+    }
+
+    header nav a:hover {
+      color: #ff4b5c;
+    }
+
+    /* Hero Section */
+    .hero {
+      text-align: center;
+      padding: 50px 20px;
+    }
+
+    .hero h2 {
+      font-size: 2.5rem;
+      color: #47a025;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin: 20px 0;
+      color: #555;
+    }
+
+    .hero button {
+      background: #e0e5ec;
+      box-shadow: inset 5px 5px 10px #babecc, inset -5px -5px 10px #ffffff;
+      border: none;
+      border-radius: 30px;
+      padding: 15px 30px;
+      font-size: 1rem;
+      color: #ff4b5c;
+      cursor: pointer;
+      margin-top: 20px;
+      transition: all 0.3s ease-in-out;
+    }
+
+    .hero button:hover {
+      box-shadow: 5px 5px 10px #babecc, -5px -5px 10px #ffffff;
+    }
+
+    /* Product Section */
+    .products {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .product-card {
+      background: #e0e5ec;
+      box-shadow: 10px 10px 20px #babecc, -10px -10px 20px #ffffff;
+      border-radius: 20px;
+      padding: 20px;
+      width: 200px;
+      text-align: center;
+    }
+   
+    .product-card img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .product-card h3 {
+      font-size: 1.2rem;
+      color: #47a025;
+      margin: 15px 0 10px;
+    }
+
+    .product-card p {
+      color: #555;
+      font-size: 0.9rem;
+    }
+
+    .product-card button {
+      background: #ff4b5c;
+      color: white;
+      border: none;
+      border-radius: 20px;
+      padding: 10px 20px;
+      cursor: pointer;
+      transition: background 0.3s ease-in-out;
+    }
+
+    .product-card button:hover {
+      background: #e63946;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Xmas Store</title>
+  <style>
+    /* Reset and Basic Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      background: #e0e5ec;
+      color: #333;
+    }
+
+    /* Neumorphic Header */
+    header {
+      background: #e0e5ec;
+      box-shadow: 10px 10px 20px #babecc, -10px -10px 20px #ffffff;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-radius: 10px;
+      margin: 20px;
+    }
+
+    header h1 {
+      font-size: 2rem;
+      color: #ff4b5c;
+    }
+
+    header nav a {
+      text-decoration: none;
+      color: #47a025;
+      font-size: 1rem;
+      font-weight: bold;
+      margin-left: 20px;
+      transition: color 0.3s ease-in-out;
+    }
+
+    header nav a:hover {
+      color: #ff4b5c;
+    }
+
+    /* Hero Section */
+    .hero {
+      text-align: center;
+      padding: 50px 20px;
+    }
+
+    .hero h2 {
+      font-size: 2.5rem;
+      color: #47a025;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin: 20px 0;
+      color: #555;
+    }
+
+    .hero button {
+      background: #e0e5ec;
+      box-shadow: inset 5px 5px 10px #babecc, inset -5px -5px 10px #ffffff;
+      border: none;
+      border-radius: 30px;
+      padding: 15px 30px;
+      font-size: 1rem;
+      color: #ff4b5c;
+      cursor: pointer;
+      margin-top: 20px;
+      transition: all 0.3s ease-in-out;
+    }
+
+    .hero button:hover {
+      box-shadow: 5px 5px 10px #babecc, -5px -5px 10px #ffffff;
+    }
+
+    /* Product Section */
+    .products {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .product-card {
+      background: #e0e5ec;
+      box-shadow: 10px 10px 20px #babecc, -10px -10px 20px #ffffff;
+      border-radius: 20px;
+      padding: 20px;
+      width: 200px;
+      text-align: center;
+    }
+   
+    .product-card img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .product-card h3 {
+      font-size: 1.2rem;
+      color: #47a025;
+      margin: 15px 0 10px;
+    }
+
+    .product-card p {
+      color: #555;
+      font-size: 0.9rem;
+    }
+
+    .product-card button {
+      background: #ff4b5c;
+      color: white;
+      border: none;
+      border-radius: 20px;
+      padding: 10px 20px;
+      cursor: pointer;
+      transition: background 0.3s ease-in-out;
+    }
+
+    .product-card button:hover {
+      background: #e63946;
+    }
+    
+
+    /* Footer */
+    footer {
+      background: #e0e5ec;
+      box-shadow: 10px 10px 20px #babecc, -10px -10px 20px #ffffff;
+      padding: 20px;
+      text-align: center;
+      margin: 20px;
+      border-radius: 10px;
+    }
+
+    footer p {
+      color: #555;
+      font-size: 0.9rem;
+    }
+
+    footer a {
+      color: #47a025;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    footer a:hover {
+      color: #ff4b5c;
+    }
+   @media (max-width: 768px) {
+  .products {
+    flex-direction: column;
+    align-items: center;
+  }
+  .product-card {
+    width: 100%;
+    margin-bottom: 20px;
+ }
+}
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>Xmas Store</h1>
+    <nav>
+      <a href="#">Home</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h2> 🎄Welcome to Xmas Store! 🎄</h2>
+    <p>Your one-stop shop for Christmas gifts, decorations, and festive delights!</p>
+    <button>Start Shopping</button>
+  </section>
+
+  <!-- Products Section -->
+  <section class="products">
+    <div class="product-card">
+      <img src="https://images.unsplash.com/photo-1514005173189-a98243197dd6?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Christmas Tree">
+      <h3>Christmas Tree</h3>
+      <p>Brighten your home with a festive tree.</p>
+      <button>Buy Now</button>
+    </div>
+    <div class="product-card">
+       <img src="https://plus.unsplash.com/premium_photo-1669832847084-365a3e49a6e2?q=80&w=688&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Decorative Lights">
+      <h3>Decorative Lights</h3>
+      <p>Light up the season with beautiful lights.</p>
+      <button>Buy Now</button>
+    </div>
+    <div class="product-card">
+      <img src="https://plus.unsplash.com/premium_photo-1669137962203-6caed0be27ac?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Santa Hat">
+      <h3>Santa Hat</h3>
+      <p>Be the star of the party with a Santa hat.</p>
+      <button>Buy Now</button>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Xmas Store. All rights reserved. <a href="#">Privacy Policy</a></p>
+  </footer>
+</body>
+</html>￼Enter
